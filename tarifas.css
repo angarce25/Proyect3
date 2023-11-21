@@ -10,7 +10,7 @@ body {
 .carousel {
   width: 100vw;
   height: 80vh;
-  position: relative;
+  position: fixed;/*antes estaba relativa*/
   z-index: 1;
 }
 
@@ -95,7 +95,7 @@ h3{
   height: 50%;
 }
 footer{
-  margin-top: 2rem;
+  margin-top: 49rem;
 }
 
 
