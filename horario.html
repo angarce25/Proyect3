@@ -6,7 +6,7 @@
         <link rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
         <link href="style.css" rel="stylesheet">
-        <link href="./thank.css" rel="stylesheet">
+        <link href="./table.css" rel="stylesheet">
         <title>Clases Yoga</title>
     </head>
     <body>
@@ -25,20 +25,44 @@
             </nav>
 
         </header>
-        <main class="thanks">
-            <figure>
-               <img class="logocheck"src="./img/check_.png" alt="logo check">
-            </figure>
 
-            <article class="thanks-text">
-                <h2>¡GRACIAS POR REGISTRARTE!</h2>
-                <h3>Tu solicitud ha sido recibida.</h3>
-                <p>Para más información puedes contactar con nosotros.<a href="contact.html">Contáctanos</a></p>
-            </article>
+        <main>
+            
+            <img class="foto_h" src="./img/calender.png" alt="foto calendario">
+            
+            <section class="horario">
+                <h1>Horarios</h1>
+                <h3>Elije la hora que mejor se adapte a ti</h3>
+                <p>¡Haz clic en el enlace para descargar el archivo PDF!</p>
+                <a href="./ejemploHorario.pdf" download="horario.pdf" class="download-link">Descargar Horario</a>
+            
+
+            </section>
+            <section class="suscribete">
+               
+            <form id="subscriptionForm">
+                <h4> Recibe nuestras novedades</h4>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            
+                <p>Síguenos en<a href="https://www.instagram.com/" id="instagramLink"> Instagram:</p></a>
+                <label for="follow">
+                    <input type="checkbox" id="follow" name="follow"> Seguir
+                </label>
+            
+                <button type="submit">Suscribirse</button>
+               
+            </form>
+            
+            <p id="thankYouMessage" style="display: none;">¡Gracias por seguirnos!</p>
+            <p id="subscriptionConfirmation" style="display: none;">Pronto recibirás nuestras novedades.</p>
+        </section>
+
+
+
         </main>
-
         <footer>
-            <div class="social-media-cta">
+            <section class="social-media-cta">
 
                 <a href="https://www.instagram.com/" target="_blank">
                     <i class="bi bi-instagram"></i>
@@ -49,12 +73,9 @@
                 <a href="https://twitter.com/" target="_blank">
                     <i class="bi bi-twitter-x"></i>
                 </a>
-            </div>
+            </section>
         </footer>
         <script src="./script.js"></script>
+        <script src="./script2.js"></script>
     </body>
 </html>
-
-
-
-

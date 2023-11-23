@@ -205,14 +205,18 @@ input::placeholder {
 @media screen and (max-width: 768px) {
 	.formulario {
 		width: 90%;
-		height: 75vh;
+		height: 70vh;
 		margin: auto;
 
 
 	}
 
+	main{
+		height: fit-content;
+	}
+
 	footer {
-		margin-top: 4.5rem;
+		margin-top: 3.5rem;
 	}
 
 	.navBar {

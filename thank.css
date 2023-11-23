@@ -29,8 +29,15 @@ article.thanks-text {
 @media screen and (max-width: 768px) {
 	
 	footer {
-		margin-top: -.8rem;
+		margin-top: 40rem;
 	}
 
-
+    .thanks{
+        width: auto;
+        height: 85vh;
+       
+    }
+    body{
+        width: fit-content;
+    }
 }
