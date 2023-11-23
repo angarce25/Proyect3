@@ -58,7 +58,7 @@ header {
 }
 
 .logo {
-    width: 5rem;
+    width: 10rem;
     display: flex;
     align-items: center;
     margin-left: 2rem;
@@ -134,7 +134,7 @@ li {
 }
 
 .letra{
-    color: #fff;
+    color: #5d5754;;
 }
 .btn {
     background-color: #a3e6c1;
@@ -161,11 +161,14 @@ footer {
     text-align: center;
     padding: 1.3rem;
     margin-bottom: 0;
-    margin-top:26rem;
+    margin-top:29rem;
 }
 
 
 @media screen and (max-width:500px) {
+.logo{
+    width: 5rem;
+}
 
     .abrirMenu,
     .cerrarMenu {
