@@ -142,7 +142,7 @@ li {
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
-    margin-right: 1rem;
+    margin:.5rem;
     font-size: 22px;
     /* Corrección de la propiedad 'font' */
     cursor: pointer;
