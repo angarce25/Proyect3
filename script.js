@@ -32,6 +32,8 @@ const campos = {
 	telefono: false
 }
 
+//formulario
+
 const validarFormulario = (e) => {
 	switch (e.target.name) {
 		case "usuario":
@@ -127,4 +129,6 @@ function redirectThankPage() {
 	window.location.href = './thank.html';
 	return false; // Para evitar que el formulario se envíe de forma predeterminada
   }
+  
+
   

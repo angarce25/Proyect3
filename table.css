@@ -57,17 +57,18 @@ p,label,input{
 
 .download-link {
     display: inline-block;
-    padding: 10px 5px;
+    padding: 10px 8px;
     margin: 1rem;
-    background-color: #A7DDC3;
-    color: #fff;
+    font-weight: bolder;
+    background-color: #a3e6c1;
+    color:#5d5754;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
   }
   
   .download-link:hover {
-    background-color: #23d680;
+    background-color: #12f6cd;
   }
 
 
@@ -87,15 +88,19 @@ input[type="email"] {
 
 button {
     padding: 8px 16px;
-    background-color: #A7DDC3;
-    color: #fff;
+    background-color: #a3e6c1;
+    color: #5d5754;
     border: none;
     border-radius: 4px;
+    margin:.5rem;
+    font-weight: bolder;
     cursor: pointer;
+    text-align: center;
 }
 button:hover{
-    background-color: #23d680;
+    background-color: #12f6cd;
 }
+
 
 /* Estilos para el texto de Instagram */
 #instagramLink {
