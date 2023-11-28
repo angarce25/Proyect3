@@ -131,4 +131,24 @@ function redirectThankPage() {
   }
   
 
-  
+// Llamada a la API de YouTube para buscar videos de meditación
+const apiKey = 'AIzaSyA9bq8v04_8AHfnKbBYRoVD3Ndl5dbIszQ';
+const videosContainer = document.getElementById('videos-container');
+
+fetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&part=snippet&q=meditacion&type=video`)
+  .then(response => response.json())
+  .then(data => {
+    // Recorrer los resultados y mostrar los videos
+    data.items.forEach(item => {
+      const videoElement = document.createElement('iframe');
+      videoElement.src = `https://www.youtube.com/embed/${item.id.videoId}`;
+      videoElement.width = '560';
+      videoElement.height = '315';
+      videoElement.title = item.snippet.title;
+
+      videosContainer.appendChild(videoElement);
+    });
+  })
+  .catch(error => {
+    console.error('Hubo un problema al obtener los datos:', error);
+  });
